@@ -1,0 +1,1070 @@
+{
+    "Reservation" : {
+        "type" : "Categorical",
+        "option" : ["예약"]
+    },
+    "Color" : {
+        "type" : "Categorical",
+        "option" : ["빨간색","파란색","초록색","푸른색","노란색","빨강","파랑","노랑","초록","검정"]
+    },
+    "PowerType" : {
+        "type" : "Categorical",
+        "option" : ["시스템 전원", "전원", "파워"]
+    },
+
+    "LEDType" : {
+        "type" : "Categorical",
+        "option": [
+            "시스템 엘이디", "엘이디",
+            "라이트",
+            "표시등", "상태등",
+            "불빛", "불"
+        ]
+    },
+
+    "TimerType" : {
+        "type" : "Categorical",
+        "option" : ["남은 시간", "타이머", "알람"]
+    },
+    "SoundType" : {
+        "type" : "Categorical",
+        "option" : ["볼륨", "시스템 볼륨", "소리",
+            "시스템 사운드", "시스템 소리", "시스템 음량"
+        ]
+    },
+    "WirelessType" : {
+        "type" : "Categorical",
+        "option" : ["와이파이", "블루투스", "인터넷"]
+    },
+    "WindDirectionType": {
+        "type": "Categorical",
+        "option": ["전면", "상향", "하향", "회전"]
+    },
+    "FridgeTemperatureType": {
+        "type": "Categorical",
+        "option": ["냉장실", "냉동실", "전체", "야채칸", "김치칸", "과일칸"]
+    },
+    
+    "VideoType" : {
+        "type" : "Categorical",
+        "option" : ["해상도", "화면 해상도", "화면"]
+    },
+    "MediaInputSource": {
+        "type": "Categorical",
+        "option": ["에이치디엠아이원", "에이치디엠아이투", "에이브이", "유에스브이", "티비","티브이"]
+    },
+
+    "ResolutionType": {
+        "type": "Categorical",
+        "option": ["칠백이십", "천팔십", "포케이", "팔케이"]
+    },
+
+    "MassageChairPart" : {
+        "type" : "Categorical",
+        "option" : ["등", "허리", "목", "종아리", "발"]
+    },
+    
+    "PasswordName" : {
+        "type" : "Categorical",
+        "option" : ["비번", "비밀번호", "암호"]
+    },
+
+    "PasswordValue" : {
+        "type" : "Categorical",
+        "option" : ["내 이름","우리집","내 초등학교 이름","내 중학교 이름","내 고향 이름"]
+    },
+    
+    "LampInfo" : {
+        "type" : "Categorical",
+        "option" : ["밝기", "배터리 상태", "현재 모드", "예약된 알람"]
+    },
+    "LampValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["밝기", "배터리 상태"]
+    },
+
+    "PlugInfo" : {
+        "type" : "Categorical",
+        "option" : ["누적 전력 사용량", "실시간 전력 사용량", "현재 모드", "예약된 알람"]
+    },
+
+    "PlugValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["누적 전력 사용량", "실시간 전력 사용량", "전력량", "사용량"]
+    },
+
+
+    "CurtainInfo" : {
+        "type" : "Categorical",
+        "option" : ["현재 모드", "예약된 알람"]
+    },
+    "AirPurifierInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "온도", "습도", "공기 상태", "현재 모드" , "예약 종료 시간"]
+    },
+     "AirPurifierValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "습도", "공기 상태"]
+    },
+    "FanInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "팬 속도", "현재 모드" , "예약 종료 시간"] 
+    },
+    "FanValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "팬 속도"] 
+    },
+    "AirConditionerInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "온도", "습도" ,"현재 모드" , "필터 상태", "예약 종료 시간", "실시간 전력 사용량", "누적 전력 사용량"]
+    },
+     "AirConditionerValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["바람 세기", "습도", "실시간 전력 사용량", "누적 전력 사용량"]
+    },
+    "HeaterInfo" : {
+        "type" : "Categorical",
+        "option" :  ["온도","현재 모드" , "예약 종료 시간", "실시간 전력 사용량", "누적 전력 사용량"]
+    },
+    "HeaterValueInfo" : {
+        "type" : "Categorical",
+        "option" :  ["실시간 전력 사용량", "누적 전력 사용량"]
+    },
+
+
+    "BoilerInfo" : {
+        "type" : "Categorical",
+        "option" : ["온도","수온" ,"현재 모드" , "예약 종료 시간", "실시간 가스 사용량", "누적 가스 사용량"]
+    },
+    "BoilerValueInfo" : {
+        "type" : "Categorical",
+        "option" : ["수온", "실시간 가스 사용량", "누적 가스 사용량"]
+    },
+    
+    "DehumidifierInfo": {
+        "type" : "Categorical",
+        "option" : ["습도" ,"현재 모드" , "예약 종료 시간", "실시간 전력 사용량", "누적 전략 사용량", "물통 수위"]
+    },
+    "DehumidifierValueInfo": {
+        "type" : "Categorical",
+        "option" : ["습도" ,"실시간 전력 사용량", "누적 전략 사용량", "물통 물높이"]
+    },
+
+
+    "HumidifierInfo": {
+        "type" : "Categorical",
+        "option" : ["습도" ,"현재 모드" , "예약 종료 시간", "실시간 전력 사용량", "누적 전략 사용량", "남은 물 양"]
+    },
+    "HumidifierValueInfo": {
+        "type" : "Categorical",
+        "option" : ["습도" ,"실시간 전력 사용량", "누적 전략 사용량", "남은 물 양"]
+    },
+    "WaterPurifierInfo": {
+        "type": "Categorical",
+        "option": ["수온", "현재 모드", "필터 상태"]
+    },
+
+    "WaterPurifierValueInfo": {
+        "type": "Categorical",
+        "option": ["수온", "한컵 용량", "정수 온도", "냉수 온도", "온수 온도"]
+    },
+    "RiceCookerInfo": {
+        "type": "Categorical",
+        "option": ["수온", "남은 시간", "현재 모드"]
+    },
+    "MicrowaveInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 모드"]
+    },
+    "InductionInfo": {
+        "type": "Categorical",
+        "option": ["온도", "남은 시간", "현재 모드", "누적 전력 사용량", "실시간 전력 사용량"]
+    },
+    "InductionValueInfo": {
+        "type": "Categorical",
+        "option": ["누적 전력 사용량", "실시간 전력 사용량"]
+    },
+    
+    "OvenInfo": {
+        "type": "Categorical",
+        "option": ["온도", "남은 시간", "현재 모드"]
+    },
+    "CoffeeMachineInfo": {
+        "type": "Categorical",
+        "option": ["수온", "남은 시간", "현재 모드", "남은 원두"]
+    },
+    "ToasterInfo": {
+        "type": "Categorical",
+        "option": ["온도", "남은 시간", "현재 모드"]
+    },
+    "DishwasherInfo": {
+        "type": "Categorical",
+        "option": ["수온", "남은 시간", "현재 모드"]
+    },
+    "RefrigeratorInfo": {
+        "type": "Categorical",
+        "option": ["냉장 온도", "냉동 온도", "내부 온도", "남은 식재료", "문 열림 상태", "현재 모드"]
+    },
+    "BlenderInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 속도", "현재 모드"]
+    },
+    "AirFryerInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 온도", "설정 온도", "예열 상태", "현재 모드"]
+    },
+    "ElectricKettleInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 온도", "설정 온도", "보온 상태", "물량", "현재 모드"]
+    },
+    "ElectricKettleValyeInfo": {
+        "type": "Categorical",
+        "option": ["물량"]
+    },
+    "WashingMachineInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 단계", "현재 모드", "물 온도", "세제량", "빨래 무게"]
+    },
+    "WashingMachineValueInfo": {
+        "type": "Categorical",
+        "option": ["현재 단계", "물 온도", "세제량", "빨래 무게"]
+    },
+    "DryerInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 모드", "설정 온도", "빨래 무게"]
+    },
+
+    "DryerValueInfo": {
+        "type": "Categorical",
+        "option": ["설정 온도", "빨래 무게"]
+    },
+    
+    "RobotVacuumInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "배터리 상태", "현재 모드", "청소 상태", "현재 위치"]
+    },
+    "RobotVacuumValueInfo": {
+        "type": "Categorical",
+        "option": ["배터리 상태", "청소 상태"]
+    },
+    "StylerInfo": {
+        "type": "Categorical",
+        "option": ["남은 시간", "현재 모드", "설정 온도", "살균 상태", "현재 단계"]
+    },
+    "VideoControllerInfo": {
+        "type": "Categorical",
+        "option": ["재생 상태", "현재 영상", "음량 상태", "자막 설정", "연결 상태", "화면 해상도", "밝기 상태"]
+    },
+    "VideoControllerValueInfo": {
+        "type": "Categorical",
+        "option": ["음량 상태","화면 해상도", "밝기 상태"]
+    },
+    "SoundControllerInfo": {
+        "type": "Categorical",
+        "option": ["재생 상태", "음량 상태", "연결 기기", "배터리 상태", "현재 모드", "밝기 상태"]
+    },
+    "SoundControllerValueInfo": {
+        "type": "Categorical",
+        "option": ["음량 상태","배터리 상태","밝기 상태"]
+    },
+    "SmartGlassesInfo": {
+        "type": "Categorical",
+        "option": ["배터리 상태", "연결 상태", "디스플레이 밝기", "알림 개수", "현재 시각", "GPS 위치"]
+    },
+    "SmartGlassesValueInfo": {
+        "type": "Categorical",
+        "option": ["배터리 상태","디스플레이 밝기"]
+    },
+    "SmartWatchInfo": {
+        "type": "Categorical",
+        "option": ["심박수", "걸음수", "배터리 상태", "알림 개수", "운동 기록", "수면 상태", "현재 시각"]
+    },
+    "SmartWatchValueInfo": {
+        "type": "Categorical",
+        "option": ["심박수", "걸음수", "배터리 상태", "알림 개수"]
+    },
+    "DoorLockInfo": {
+        "type": "Categorical",
+        "option": ["문 열림 상태", "잠금 상태", "배터리 상태", "비밀번호 설정 여부", "사용 기록", "연결 상태"]
+    },
+    "HomeCamInfo": {
+        "type": "Categorical",
+        "option": ["촬영 상태", "녹화 중 여부", "해상도 설정", "배터리 상태", "연결 상태", "움직임 감지 상태"]
+    },
+    "HomeCamValueInfo": {
+        "type": "Categorical",
+        "option": ["해상도 설정", "배터리 상태"]
+    },
+    "MassageChairInfo": {
+        "type": "Categorical",
+        "option": ["작동 상태", "모드", "남은 시간", "마사지 강도", "의자 각도", "전원 상태", "현재 시각"]
+    },
+    "MassageChairValueInfo": {
+        "type": "Categorical",
+        "option": ["마사지 강도", "의자 각도"]
+    },
+    "MassagerInfo": {
+        "type": "Categorical",
+        "option": ["작동 상태", "모드", "남은 시간", "마사지 강도", "전원 상태", "배터리 상태", "현재 시각"]
+    },
+    "MassagerValueInfo": {
+        "type": "Categorical",
+        "option": ["마사지 강도", "배터리 상태"]
+    },
+    "BeautyMaskInfo": {
+        "type": "Categorical",
+        "option": ["작동 상태", "모드", "LED 밝기", "피부 케어 단계", "남은 시간", "연결 상태", "전원 상태", "현재 시각"]
+    },
+    "BeautyMaskValyeInfo": {
+        "type": "Categorical",
+        "option": [ "LED 밝기", "피부 케어 단계"]
+    },
+
+    "Temperature" : {
+        "type" : "Categorical",
+        "option" : ["온도"]
+    },
+
+    "LampMode" : {
+        "type" : "Categorical",
+        "option" : ["태양광","절전","수면등","무드등"]
+    },
+    "PlugMode" : {
+        "type" : "Categorical",
+        "option" : ["기본", "절전", "타이머"]
+    },
+    "CurtainMode" : {
+        "type" : "Categorical",
+        "option" : ["자동", "수동"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "AirPurifierMode" : {
+        "type" : "Categorical",
+        "option": [
+            "유브이", "자외선", "자외선 살균", "살균",
+            "항균",
+
+            "이온", "음이온", "이온화", "플라즈마", "플라즈마 이온", "플라즈마 클러스터",
+            "에어이온", "이오나이저", "이온 발생", "이온 발생기", 
+            "정전기 제거", "공기 정화",
+
+            "가습", "자동 가습",
+            "습도", "습도 조절", "습도 관리", "습도 유지", "건조 방지",
+
+            "자동 운전", "자동", "스마트",
+            "절전", "저소음",
+            "수면", "야간", "취침"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    
+    "AirConditionerMode": {
+        "type": "Categorical",
+        "option": ["기본", "절전", "파워", "공기 청정",
+            "터보", "쾌속", "자동", "수면", "조용한",
+            "제습", "쾌적", "스마트", "에코", "쾌적 절전"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "HeaterMode": {
+        "type": "Categorical",
+        "option": [
+            "기본", "온풍", "난방", "따뜻한 바람", "온풍 작동",
+            "빠른 난방", "즉시 난방", "터보 난방", 
+            "자동 운전", "자동", "절전", "에코", "스마트",
+            "수면", "야간", "저소음", "취침",
+            "안전", "화상", "전도 방지", "저온"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "BoilerMode": {
+        "type": "Categorical",
+        "option": [
+                "난방","온수","절전","외출","예약",
+                "쾌속 난방","즉시 난방","자동 운전","스마트",
+                "수동","온도 유지","수면","취침",
+                "야간","동파 방지","배관 보호",
+                "겨울","안전"
+            ],
+            "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "DehumidifierMode": {
+        "type": "Categorical",
+        "option": [
+            "자동", "연속 제습", "쾌속 제습", "습도 설정", "절전", "수면",  
+            "건조", "실내 제습", "장마철",
+            "저소음", "스마트", "쾌적", "강력 제습", "표준 제습",
+            "실내 습도 유지", "에너지 절약"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "HumidifierMode": {
+        "type": "Categorical",
+        "option": [
+            "자동", "수동", "쾌적", "스마트",
+            "절전", "에코", "수면", "야간", "저소음", "취침",
+            "강풍", "중풍", "약풍",
+            "저습", "중습", "고습",
+            "쾌속 가습", "연속 가습", "간헐 가습",
+            "습도 유지", 
+            "가열 가습", "냉가습", "초음파 가습", "복합 가습", "자연 기화식"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "WaterPurifierMode": {
+        "type": "Categorical",
+        "option": ["냉수", "온수", "정수", "추출"]
+    },
+    "RiceCookerMode": {
+        "type": "Categorical",
+        "option": ["백미", "잡곡", "찜", "보온", "쾌속"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "MicrowaveMode": {
+        "type": "Categorical",
+        "option": ["가열", "해동", "조리"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "InductionMode": {
+        "type": "Categorical",
+        "option": ["가열", "보온", "끓이기", "볶음"],
+        "unit" : ["","모드", "기능", "방식"]
+    
+    },
+    "OvenMode": {
+        "type": "Categorical",
+        "option": ["가열", "구이", "베이킹", "해동", "예열"],
+        "unit" : ["","모드", "기능", "방식"]
+    
+    },
+    "CoffeeMachineMode": {
+        "type": "Categorical",
+        "option": ["에스프레소", "아메리카노", "라떼", "카푸치노"]
+    },
+    "ToasterMode": {
+        "type": "Categorical",
+        "option": ["굽기", "해동", "데우기"],
+        "unit" : ["","모드", "기능", "방식"]
+    
+    },
+    "DishwasherMode": {
+        "type": "Categorical",
+        "option": [
+            "세척",
+            "표준 세척", "강력 세척", "에코 세척", "절전",
+            "빠른 세척", "고온 세척", "건조 전용", "불림",
+            "자동", "수동", "예약 세척",
+            "저소음", "야간"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "BlenderMode": {
+        "type": "Categorical",
+        "option": ["분쇄", "섞기", "다지기", "블렌딩"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "AirFryerMode": {
+        "type": "Categorical",
+        "option": ["기본", "자동", "수동", "에어프라이", "구이", 
+        "베이킹", "튀김", "데우기", "해동", "로스트", "피자", "감자튀김", "치킨", "스테이크",
+         "생선"],
+        "unit" : ["","모드", "기능", "방식"]
+
+    },
+    "ElectricKettleMode": {
+        "type": "Categorical",
+        "option": ["가열", "보온", "자동"],
+        "unit" : ["","모드", "기능", "방식"]
+
+    },
+    "WashingMachineMode": {
+        "type": "Categorical",
+        "option": ["표준", "급속", "이불", "헹굼 탈수", "조용한"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "DryerMode": {
+        "type": "Categorical",
+        "option": ["표준", "강력", "섬세", "절전", "스피드"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "RobotVacuumMode": {
+        "type": "Categorical",
+        "option": ["자동", "구역", "모서리", "강력", "조용한"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "StylerMode": {
+        "type": "Categorical",
+        "option": [
+            "표준", "바지 주름 제거", "살균", "스팀", "탈취",
+            "울/섬세", "셔츠 리프레시", "겨울 옷", "아기 옷", "강력 탈취", "모피/가죽",
+            "드라이완료 보관", "스피드", "건조", "정장", "침구"
+        ],
+         "unit" : ["","모드", "기능", "방식", "코스"]
+    },
+    "VideoMode": {
+        "type": "Categorical",
+        "option": ["영화", "스포츠", "게임", "표준"],
+        "unit" : ["모드"]
+    },
+    "SoundMode": {
+        "type": "Categorical",
+        "option": ["표준", "음악", "영화", "스포츠", "게임"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "SmartGlassesMode": {
+        "type": "Categorical",
+        "option": ["에이알", "브이알", "비디오", "음성명령"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "SmartWatchMode": {
+        "type": "Categorical",
+        "option": ["알림", "운동", "수면", "심박", "날씨"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "DoorLockMode": {
+        "type": "Categorical",
+        "option": ["자동 잠금", "수동 잠금", "이중 잠금", "알림"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "HomeCamMode": {
+        "type": "Categorical",
+        "option": ["감시", "야간", "자동 추적", "실시간"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+    "MassageChairMode": {
+        "type": "Categorical",
+        "option": ["전신", "목어깨", "허리", "릴렉스"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "MassagerMode": {
+        "type": "Categorical",
+        "option": ["진동", "온열", "지압"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "BeautyMaskMode": {
+        "type": "Categorical",
+        "option": ["표준", "미백", "탄력", "진정", "클렌징"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "Wind" : {
+        "type" : "Categorical",
+        "option" : ["바람","풍속"]
+    },   
+
+   "FanSpeedMode": {
+        "type": "Categorical",
+        "option": [
+            "미풍", "약풍", "중풍", "강풍", "최대풍", "터보", "쎈바람",
+            "자연풍", "수면풍", "자동", "쾌속풍", "에코풍", "절전풍", "초강풍"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "CoffeeType": {
+        "type": "Categorical",
+        "option": [
+            "에스프레소", "아메리카노", "카페라떼", "카푸치노",
+            "마끼아또", "모카", "플랫화이트", "롱블랙",
+            "더치커피", "콜드브루", "바닐라라떼", "헤이즐넛라떼",
+            "디카페인", "핫초코", "우유만", "스팀우유"
+        ]
+    },
+    "ToastMode": {
+        "type": "Categorical",
+        "option": [
+            "기본",
+            "베이글", "해동", "재가열",
+            "크루아상", "머핀", "식빵",
+            "슬라이스", "빵 굽기", "토스트 굽기"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+
+    "WaterType": {
+        "type": "Categorical",
+        "option": [
+            "물","냉수", "온수", "정수", "미지근한 물", "중온수", "뜨거운 물", "따뜻한 물",
+            "차가운 물", "중간 온도 물", "상온수", "냉온수"
+        ]
+    },
+
+    "RiceType": {
+        "type": "Categorical",
+        "option": [
+            "밥",
+            "백미", "현미", "잡곡", "영양밥", "쌀밥", "보리밥",
+            "죽", "누룽지", "찹쌀", "찹쌀밥",
+            "쾌속 취사", "고슬밥", "진밥",
+            "냉동밥", "냉장밥", "갓지은밥", "보온밥"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "CookMode": {
+        "type": "Categorical",
+        "option": [
+            "일반 조리", "해동", "찜", "그릴", "오븐", "에어프라이", 
+            "구이", "굽기", "튀김", "재가열", 
+            "자동 조리", "수동 조리", "야채 조리", "고기 조리"
+        ],
+         "unit" : ["","모드", "기능", "방식"]
+    },
+
+    
+    "DishType": {
+    "type": "Categorical",
+        "option": [
+            "일반 식기", "냄비", "프라이팬", "유리컵", "플라스틱 용기",
+            "도자기", "고온 식기", "섬세한 식기", "아기용 식기"
+        ]
+    },
+
+    "RefrigeratorMode": {
+    "type": "Categorical",
+        "option": [
+            "기본", "절전", "에코", "자동 운전", "스마트",
+            "급속 냉각", "급속 냉동", "냉동 강화", "냉장 강화",
+            "야채", "김치", "과일", "육류",
+            "보관", "외출", "저소음", "수면",
+            "클린", "탈취", "살균"
+        ],
+         "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "MixerSpeed": {
+        "type" : "Categorical",
+        "option" : ["칼날 속도", "칼날 강도", "회전 속도"]
+    }
+    ,
+    "MixerMode": {
+        "type": "Categorical",
+        "option": ["분쇄", "블렌딩", "혼합", "다지기", "반죽", "주스", "스무디",
+         "스프", "아이스 크러시", "세척", "기본", "수동", "자동"],
+         "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "KettleMode": {
+        "type": "Categorical",
+        "option": [
+            "기본", "끓이기", "빠른 끓임", "보온", "보온 유지",
+            "온도 설정", "유아식", "차", "커피"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "WashingMode": {
+        "type": "Categorical",
+        "option": [
+            "표준", "쾌속", "절전", "헹굼 및 탈수", "울세탁", "아기옷",
+             "이불", "조용한", "삶음", "찬물세탁", "강력세탁"
+        ],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+    "ClothesType": {
+        "type": "Categorical",
+        "option": [
+            "표준", "면", "합성섬유", "울", "아기옷", "이불", "셔츠", 
+            "수건", "속옷", "신속 건조", "저온 건조", "강력 건조"
+        ]
+    },
+    "CleaningLocation": {
+        "type": "Categorical",
+        "option": [
+            "전체", "거실", "주방", "안방", "아이방", "서재", "화장실", "현관", "침실",
+             "지정 구역", "Z구역", "X구역", "A구역", "B구역"
+        ]
+    },
+
+
+    "MassageMode": {
+        "type": "Categorical",
+        "option": ["전신", "상체", "하체", 
+        "스트레칭", "릴렉스", "강력", "집중"],
+        "unit" : ["","모드", "기능", "방식"]
+    },
+
+
+    "DisplayType": {
+        "type": "Categorical",
+        "option": ["화면", "디스플레이", "모니터", "스크린", "패널", "표시장치", "영상 화면","인데케이터"]
+    },
+    "SoundRange" : {
+        "type" : "Categorical",
+        "option" : ["저음","중저음","중간음","고음"]
+    },
+    
+    "TimeInfo" : {
+        "type" : "Categorical",
+        "option" : ["남은 시간","꺼지기 까지","켜지기 까지"]
+    },
+    
+    "ChannelType": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 999,
+            "step" : 100,
+            "unit": ["번","채널"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "BrightnessPercent" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["퍼센트", "퍼"],
+            "numeralType" : "Ordinal"
+        }
+    },
+
+    "BrightnessLevel_Ordinal" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["단계","단"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    
+    "BrightnessLevel_Cardinal" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["단계"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "SoundLevel_Cardinal" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["단계","단"],
+            "numeralType" : "Cardinal"
+        }
+    },"SoundLevel_Ordinal" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["","단계","단"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WindPowerLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 10,
+            "max": 10,
+            "step" : 1,
+            "unit": ["단계", "단"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WindPowerLevel_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 10,
+            "max": 10,
+            "step" : 1,
+            "unit": ["단계", "단"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "AirTemperature": {
+        "type": "Numerical",
+        "option": {
+            "min": 10,
+            "max": 10,
+            "step" : 1,
+            "unit": ["도"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WaterTemperature": {
+        "type": "Numerical",
+        "option": {
+            "min": 10,
+            "max": 10,
+            "step" : 1,
+            "unit": ["도"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "HeatingTemperature" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 5,
+            "unit" : ["도"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "CoolingTemperature" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 10,
+            "max" : 10,
+            "step" : 1,
+            "unit" : ["도"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "HumidityPercent": {
+        "type": "Numerical",
+        "option": {
+            "min": 10,
+            "max": 10,
+            "step" : 5,
+            "unit": ["퍼센트"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WaterVolume_ml_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step" : 10,
+            "unit": ["밀리", "밀리리터"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WaterVolume_Cup_Cardinal" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 1,
+            "max" : 1,
+            "step" : 1,
+            "unit":["잔","컵"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "WaterHeight" : {
+        "type" : "Categorical",
+        "option" : ["수위", "물높이","물"]
+    },
+    "WaterHeightLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step" : 1,
+            "unit": ["눈금", "단계"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WashCount_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["회"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "WashCount_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["번"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "RotationSpeedLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["단계","단"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "RotationSpeedLevel_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["단계","단"],
+            "numeralType" : "Cardinal"
+        }
+    },
+
+    "EQLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 0,
+            "max": 0,
+            "step": 1,
+            "unit": ["단계","단"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    
+    "EQLevel_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 0,
+            "max": 0,
+            "step": 1,
+            "unit": ["단계","단"],
+            "numeralType" : "Cardinal"
+        }
+    },
+
+    "MassageLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["단계"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "MassageLevel_Cardinal": {
+            "type": "Numerical",
+            "option": {
+                "min": 1,
+                "max": 1,
+                "step": 1,
+                "unit": ["단계"],
+            "numeralType" : "Cardinal"
+            }
+    },
+    "TimeSecond": {
+        "type": "Numerical",
+        "option": {
+            "min": 5,
+            "max": 5,
+            "step" : 1,
+            "unit": ["초"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "TimeMinute" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 5,
+            "max" : 5,
+            "step" : 1,
+            "unit" : ["분"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "TimeHour" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 1,
+            "max" : 1,
+            "step" : 1,
+            "unit" : ["시간"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    
+    
+    "Angle" : {
+        "type" : "Numerical",
+        "option" : {
+            "min" : 0,
+            "max" : 0,
+            "step" : 5,
+            "unit" : ["도","각도"],
+            "numeralType" : "Ordinal"
+        }
+    },
+
+    "CookTime": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 10,
+            "unit": ["초"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "RinseCount_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["회"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "RinseCount_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["번"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "SpinCount_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["회"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "SpinCount_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["회"],
+            "numeralType" : "Cardinal"
+        }
+    },
+    "InductionLevel_Ordinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["단","단계"],
+            "numeralType" : "Ordinal"
+        }
+    },
+    "InductionLevel_Cardinal": {
+        "type": "Numerical",
+        "option": {
+            "min": 1,
+            "max": 1,
+            "step": 1,
+            "unit": ["단","단계"],
+            "numeralType" : "Cardinal"
+        }
+    }
+}

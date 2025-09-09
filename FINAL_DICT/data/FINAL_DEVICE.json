@@ -1,0 +1,1655 @@
+{
+
+"조명" : {  
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower" : [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode" : [["LampMode"]]
+    }, 
+    "설정/조정": {
+        "SetIoT":[["WirelessType"]],
+
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetColor" : [["LEDType","Color"]],
+
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel_Cardinal","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel_Cardinal","BrightnessPercent"]]]
+    }, 
+    "정보 요청": {
+        "RequestInformation" : [["LampInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","LampValueInfo"]]],
+        "RequestPercent" :  [[["SoundType","LampValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["LampMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"플러그" : {  
+    "시작/실행": { 
+        "TurnOnPower": [[["","PowerType"]]], 
+        "TurnOnSound": [["SoundType"]], 
+        "TurnOnLamp" :[["LEDType"]]
+    }, 
+    "정지/중단": { 
+        "TurnOffPlug" : [[["","PowerType"]]], 
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode" : [["PlugMode"]]
+    }, 
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+
+        "SetColor" : [["LEDType","Color"]],
+        
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]]
+    }, 
+    "정보 요청": {
+        "RequestInformation" : [["PlugInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","PlugValueInfo"]]],
+        "RequestTemperature" : [[""]],
+         "RequestPercent" : [[["SoundType","PlugValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["PlugMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"커튼" : {  
+    "시작/실행": { 
+        "TurnOnSound": [["SoundType"]], 
+        "TurnOnLamp" :[["LEDType"]],
+        "DrawCurtain" : [[""]]
+    }, 
+    "정지/중단": { 
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]], 
+        "CloseCurtain" : [[""]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": { 
+        "SetMode" : [["CurtainMode"]]
+    }, 
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]]
+    }, 
+    "정보 요청": {
+        "RequestInformation" : [["CurtainInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["CurtainMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"공기청정기": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]], 
+        "TurnOnSound": [["SoundType"]], 
+        "TurnOnLamp" :[["LEDType"]], 
+        "StartAirPurification" :[[["","AirPurifierMode"]]]   
+    },
+    "정지/중단": { 
+        "TurnOffPower": [[["","PowerType"]]], 
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]], 
+        "StopAirPurification" :[["AirPurifierMode"]],
+        "Pause" : [["AirPurifierMode"]]
+        
+    }, 
+    "재개/계속": {
+        "Resume" : [["AirPurifierMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["AirPurifierMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetWindDirection": [["Wind","WindDirectionType"]],
+
+        "IncreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "DecreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "SetWindPower": [["Wind",["","WindPowerLevel_Ordinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["AirPurifierInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","AirPurifierValueInfo"]]],
+        "RequestPercent" : [[["SoundType","AirPurifierValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["AirPurifierMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"선풍기": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartFan" : [["Wind",["","WindPowerLevel_Ordinal"]]]
+    },
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopFan" : [[["Wind","FanSpeedMode"]]],
+        "Pause" : [["FanSpeedMode"]]
+    },
+    "재개/계속": {
+        "Resume" : [["FanSpeedMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["FanSpeedMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetWindDirection": [["Wind","WindDirectionType"]],
+
+        "IncreaseWindPower": [[["","Wind"],["","WindPowerLevel","FanSpeedMode"]]],
+        "DecreaseWindPower": [[["","Wind"],["","WindPowerLevel","FanSpeedMode"]]],
+        "SetWindPower": [["Wind",["","WindPowerLevel_Ordinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["FanInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","FanValueInfo"]]],
+        "RequestPercent" : [[["SoundType","FanValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["FanSpeedMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+
+"에어컨": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartAirConditioner" : [["","AirConditionerMode"],["Wind", ["","WindPowerLevel_Ordinal"]]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["AirConditionerMode","PowerType"]]], 
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopAirPurification" : [["AirConditionerMode"]],
+        "Pause" : [["AirConditionerMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["AirConditionerMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["AirConditionerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetWindDirection": [["WindDirectionType"]],
+
+        "IncreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "DecreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "SetWindPower": [["Wind",["","WindPowerLevel_Ordinal"]]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","AirTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","AirTemperature"]]],
+        "SetTemperature": [[["","Temperature"],"AirTemperature"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["AirConditionerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","AirConditionerValueInfo"]]],
+        "RequestTemperature" :[[]],
+        "RequestPercent" : [[["SoundType","AirConditionerValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["AirConditionerMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"히터": {
+     "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartHeater" : [["","HeaterMode"],["Temperature","AirTemperature"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [["HeaterMode"]],
+        "Pause" : [["HeaterMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["HeaterMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["HeaterMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetWindDirection": [["WindDirectionType"]],
+
+        "IncreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "DecreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "SetWindPower": [["Wind",["","WindPowerLevel_Ordinal"]]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","AirTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","AirTemperature"]]],
+        "SetTemperature": [[["","Temperature"],"AirTemperature"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["HeaterInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+
+        "RequestValue" : [[["SoundType","HeaterValueInfo"]]],
+        "RequestTemperature" :[[]],
+        "RequestPercent" : [[["SoundType","HeaterValueInfo"]]]
+
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["HeaterMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"보일러": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" : [["LEDType"]],
+        "StartBoiler" : [["BoilerMode"],["Temperature","WaterTemperature"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["PowerType","BoilerMode"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode": [["BoilerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],"WaterTemperature"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["BoilerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","BoilerValueInfo"]]],
+        "RequestTemperature" :[[]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["BoilerMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"제습기": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]], 
+        "StartDehumidification" :[["DehumidifierMode"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopDehumidification" : [["DehumidifierMode"]],
+        "Pause" : [["DehumidifierMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["DehumidifierMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["DehumidifierMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseHumidity": [["Humidity","HumidityPercent"]],
+        "DecreaseHumidity": [["Humidity","HumidityPercent"]],
+        "SetHumidity": [["Humidity","HumidityPercent"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["DehumidifierInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","DehumidifierValueInfo"]]],
+        "RequestPercent" : [[["SoundType","DehumidifierValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["DehumidifierMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"가습기": {
+    "시작/실행": {
+        "TurnOnPower": [[["PowerType","HumidifierMode"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartHumidification" : [["HumidifierMode"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["HumidifierMode","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopDehumidification" : [["HumidifierMode"]],
+        "Pause" : [["HumidifierMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["HumidifierMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["HumidifierMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseHumidity": [["Humidity","HumidityPercent"]],
+        "DecreaseHumidity": [["Humidity","HumidityPercent"]],
+        "SetHumidity": [["Humidity","HumidityPercent"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["HumidifierInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","HumidifierValueInfo"]]],
+        "RequestPercent" : [[["SoundType","HumidifierValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["HumidifierMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"정수기": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]], 
+        "TurnOnLamp" :[["LEDType"]],
+        "StartWaterDispenser" : [[["","WaterType"],["","WaterVolume_Cup_Cardinal","WaterVolume_ml_Ordinal"]]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]],
+        "StopWaterDispenser" : [[""]],
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["WaterPurifierMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],"WaterTemperature"]],
+
+        "SetVolume": [["WaterType",["WaterVolume_ml_Ordinal","WaterVolume_Cup_Cardinal_Cardinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["WaterPurifierInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","WaterPurifierValueInfo"]]]
+        
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["WaterPurifierMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"밥솥": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartRiceCook" :[["RiceType"]] 
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]],
+        "StopRiceCook" : [[""]],
+        "Pause" : [[""]]      
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]       
+    }, 
+    "변경/전환": {
+        "SetMode": [["RiceCookerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],"WaterTemperature"]],
+
+        "IncreaseWaterHeight": [[["","WaterHeight"],"WaterHeightLevel_Ordinal"]],
+        "DecreaseWaterHeight": [[["","WaterHeight"],"WaterHeightLevel_Ordinal"]],
+        "SetWaterHeight": [[["","WaterHeight"],"WaterHeightLevel_Ordinal"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["RiceCookerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["RiceCookerMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"전자레인지": {
+   "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]], 
+        "StartHeat" : [["CookTime"]] ,
+        "StartCook" : [["CookMode", "CookTime"]], 
+        "StartDefrost" : [["CookTime"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [[["","CookMode"]]],
+        "StopCook" : [[["","CookMode"]]],
+        "StopDefrost" : [[["","CookMode"]]],
+        "Pause" : [[["","CookMode"]]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[["","CookMode"]]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["MicrowaveMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["MicrowaveInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["MicrowaveMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"인덕션": {
+    "시작/실행": { 
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartHeat" : [[""]],
+        "StartInduction" : [["InductionLevel_Ordinal"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [[""]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode": [["InductionMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","InductionLevel_Cardinal","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","InductionLevel_Cardinal","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["InductionLevel_Ordinal","HeatingTemperature"]]],
+
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["InductionInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","InductionValueInfo"]]],
+        "RequestTemperature" : [[""]],
+         "RequestPercent" : [[["SoundType","InductionValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["InductionMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+"오븐": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartHeat" : [[["","CookTime"]]],
+        "StartCook" : [["CookMode", "CookTime"]],
+        "StartDefrost" : [[["","CookTime"]]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [[["","CookMode"]]],
+        "StopCook" : [[["","CookMode"]]],
+        "StopDefrost" : [[["","CookMode"]]],
+        "Pause" : [["CookMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["CookMode"]]
+    }, 
+     "변경/전환": {
+        "SetMode": [["OvenMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["HeatingTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["OvenInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["OvenMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+"커피머신": {
+    "시작/실행": {
+        "TurnOnPower": [[["","PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartWaterDispenser" : [[["","CoffeeType"], ["","WaterVolume_Cup_Cardinal","WaterVolume_ml_Ordinal"]]],
+        "StartBrew" : [[""]]
+    },
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]],
+        "StopWaterDispenser" : [["CoffeeType"]],
+        "Pause" : [["CoffeeType"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["CoffeeType"]]
+    }, 
+        "변경/전환": {
+        "SetMode": [["CoffeeMachineMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["WaterTemperature"]]],
+
+        "IncreaseCount": [["WaterVolume_Cup_Cardinal"]],
+        "DecreaseCount": [["WaterVolume_Cup_Cardinal"]],
+        "SetCount": [["WaterVolume_Cup_Cardinal"]],
+
+        "SetVolume": [[["WaterVolume_ml_Ordinal","WaterVolume_Cup_Cardinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["CoffeeMachineInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["CoffeeMachineMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"토스터": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]], 
+        "StartHeat" : [[["","CookTime"]]],
+        "StartCook" : [["ToastMode" , "CookTime"]],
+        "StartDefrost" : [[["","CookTime"]]]}, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [[["","CookMode"]]],
+        "StopCook" : [[["","CookMode"]]],
+        "StopDefrost" : [[["","CookMode"]]],
+        "Pause" : [["CookMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["CookMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["ToasterMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "IncreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["HeatingTemperature"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["ToasterInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["CookMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"식기세척기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" : [["LEDType"]], 
+        "StartDrying" : [["DryCount"]],
+        "StartRinsing" : [["RinseCount_Ordinal"]],
+        "StartDishWashing" : [["DishType","DishwasherMode"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopDishWashing" : [[["","DishwasherMode"]]],
+        "Pause" : [["DishwasherMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["DishwasherMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["DishwasherMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [["WaterTemperature"]],
+        "DecreaseTemperature": [["WaterTemperature"]],
+        "SetTemperature": [["WaterTemperature"]],
+        
+        "IncreaseTimer": [["TimerType", ["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType", ["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType", ["","TimeMinute"],["","TimeSecond"]]],
+        
+        "IncreaseCount": [["WashCount_Cardinal"]],
+        "DecreaseCount": [["WashCount_Cardinal"]],
+        "SetCount": [["WashCount_Ordinal"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["DishwasherInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["DishwasherMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"냉장고": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType","RefrigeratorMode"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType","RefrigeratorMode"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode": [["RefrigeratorMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "IncreaseTemperature": [["FridgeTemperatureType", ["","Temperature"], ["","CoolingTemperature"]]],
+        "DecreaseTemperature": [["FridgeTemperatureType", ["","Temperature"], ["","CoolingTemperature"]]],
+        "SetTemperature": [["FridgeTemperatureType", ["","Temperature"],"CoolingTemperature"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["RefrigeratorInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["RefrigeratorMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"믹서기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartGrinding" : [["MixerMode"]],
+        "StartBlending" : [["MixerMode"]],
+        "StartMixing" : [["MixerMode"]],
+        "StartChopping" : [["MixerMode"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]], 
+        "StopGrinding" : [["MixerMode"]],
+        "Pause" : [["MixerMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["MixerMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["BlenderMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+        
+        "IncreaseRotationSpeed": [[["","MixerSpeed"],["","RotationSpeedLevel_Cardinal"]]],
+        "DecreaseRotationSpeed": [[["","MixerSpeed"],["","RotationSpeedLevel_Cardinal"]]],
+        "SetRotationSpeed": [[["","MixerSpeed"],"RotationSpeedLevel_Ordinal"]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["BlenderInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["BlenderMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"에어프라이어": {
+     "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]], 
+        "StartHeat" : [[["","CookTime"]]],
+        "StartCook" : [["CookMode", "CookTime"]], 
+        "StartDefrost" : [[["","CookTime"]]]}, 
+    "정지/중단": {
+        "TurnOffPower": [[["","PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopHeat" : [[["","CookMode"]]],
+        "StopCook" : [[["","CookMode"]]],
+        "StopDefrost" : [[["","CookMode"]]],
+        "Pause" : [["CookMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["CookMode"]]
+    }, 
+     "변경/전환": {
+        "SetMode": [["AirFryerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["HeatingTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType", ["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType", ["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeMinute"], ["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["AirFryerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["AirFryerMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"전기포트": {
+     "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartKeepWarm" :[["CookTime"]],
+        "StartHeat" : [[["","KettleMode","CookTime"]]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopKeepWarm" :[[""]],
+        "StopHeat" : [[["","KettleMode"]]],
+        "Pause" : [["KettleMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["KettleMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["ElectricKettleMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+        
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["WaterTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["ElectricKettleInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","ElectricKettleValyeInfo"]]],
+        "RequestTemperature" : [[""]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["KettleMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"세탁기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartWashing" : [["ClothesType","WashingMode"]],
+        "StartDrying" : [["DryingCount"]],
+        "StartRinsing" :[["RinseCount_Ordinal"]],
+        "StartSpining" : [["SpinCount_Ordinal"]]}, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]], 
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopWashing" : [[["","WashingMode"]]],
+        "Pause" : [["WashingMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["WashingMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["WashingMachineMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+        
+        "IncreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","WaterTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["WaterTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+
+        "IncreaseCount": [["WashCount_Cardinal"]],
+        "DecreaseCount": [["WashCount_Cardinal"]],
+        "SetCount": [["WashCount_Ordinal"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["WashingMachineInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","WashingMachineValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["WashingMachineMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"건조기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartDrying": [["ClothesType"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopDrying" : [[""]],
+        "Pause" : [["WashingMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["WashingMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["DryerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["HeatingTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["DryerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","DryerValueInfo"]]],
+        "RequestTemperature" : [[""]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["WashingMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"로봇청소기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartCleaning": [["CleaningLocation"]],
+        "StartCharging": [[""]], 
+        "StartReturning" :[[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopCleaning": [[""]],
+        "StopCharging": [[""]],
+        "StopReturning" :[[""]] ,
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["RobotVacuumMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "DecreaseWindPower": [[["","Wind"],["","WindPowerLevel_Cardinal"]]],
+        "SetWindPower": [["Wind",["","WindPowerLevel_Ordinal"]]],
+
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["RobotVacuumInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestPercent" : [["RobotVacuumValueInfo"]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["RobotVacuumMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"스타일러": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartCare": [["StylerMode"]],
+        "StartSteam": [[""]],
+        "StartDeodorization" :[[""]],
+        "StartSterilization" : [[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopCare": [["StylerMode"]],
+        "Pause" : [["StylerMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["StylerMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["StylerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "IncreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "DecreaseTemperature": [[["","Temperature"],["","HeatingTemperature"]]],
+        "SetTemperature": [[["","Temperature"],["HeatingTemperature"]]],
+        
+        "IncreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "DecreaseTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]],
+        "SetTimer": [["TimerType",["","TimeHour"],["","TimeMinute"],["","TimeSecond"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["StylerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["StylerMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"비디오 컨트롤러": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "TurnOnDisplay" : [["DisplayType"]]
+    }, 
+    "정지/중단": { 
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "TurnOffDisplay" : [["DisplayType"]],
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["VideoMode"]],
+        "ChangeChannel": [["ChannelType"]],
+        "SwitchSource": [["MediaInputSource"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["SoundLevel_Ordinal","SoundMode"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetResolution": [["ResolutionType"]],
+        
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["VideoControllerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","VideoControllerValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["VideoMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"사운드 컨트롤러": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "TurnOnDisplay" : [["DisplayType"]]}, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "TurnOffDisplay" : [["DisplayType"]]
+    }, 
+    "재개/계속": {           }, 
+    "변경/전환": {
+        "SetMode": [["SoundMode"]],
+        "SwitchSource": [["MediaInputSource"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["SoundLevel_Ordinal","SoundMode"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetEQ": [["SoundRange","EQLevel_Ordinal"]],
+        "IncreaseEQ": [["SoundRange",["","EQLevel_Cardinal"]]],
+        "DecreaseEQ": [["SoundRange",["","EQLevel_Cardinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["SoundControllerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","SoundControllerValueInfo"]]]
+  },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["SoundMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"스마트 글래스": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "TurnOnDisplay" : [["DisplayType"]]},
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "TurnOffDisplay" : [["DisplayType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode": [["SmartGlassesMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["SoundLevel_Ordinal","SoundMode"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetIoT": [["WirelessType"]],
+
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["SmartGlassesInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","SmartGlassesValueInfo"]]],
+         "RequestPercent" : [["SmartGlassesValueInfo"]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["SmartGlassesMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"스마트워치": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "TurnOnDisplay" : [["DisplayType"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "TurnOffDisplay" : [["DisplayType"]]
+    }, 
+    "재개/계속": {}, 
+    "변경/전환": {
+        "SetMode": [["SmartWatchMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["SoundLevel_Ordinal","SoundMode"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["SmartWatchInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","SmartWatchValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["SmartWatchMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"도어락": {
+   "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "TurnOnDisplay" : [["DisplayType"]],
+        "StartLock" : [[""]],
+        "StratUnlock" : [[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "TurnOffDisplay" : [["DisplayType"]],
+        "StopLock" : [[""]],
+        "Pause" :   [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["DoorLockMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetPassword" : [["PasswordName","PasswordValue"]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["DoorLockInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["DoorLockMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"홈캠": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartRecord" : [[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],
+        "StopRecord" :[[""]], 
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]     }, 
+    "변경/전환": {
+        "SetMode": [["HomeCamMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+
+        "SetResolution" : [[["","VideoType"],"ResolutionType"]],
+        "IncreaseResolution" : [[["","VideoType"],["","ResolutionType"]]],
+        "DecreaseResolution" : [[["","VideoType"],["","ResolutionType"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["HomeCamInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","HomeCamValueInfo"]]]
+        
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["HomeCamMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"안마의자": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" : [["LEDType"]],
+        "StartMassage" : [["MassageMode"]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],  
+        "StopMassage"  : [["MassageMode"]],
+        "Pause" : [["MassageMode"]]
+    }, 
+    "재개/계속": {
+        "Resume" : [["MassageMode"]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["MassageChairMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "SetMassagePower" : [[["","MassageChairPart"],"MassageLevel_Ordinal"]],
+        "IncreaseMassagePower" : [[["","MassageChairPart"],["","MassageLevel_Cardinal"]]],
+        "DecreaseMassagePower" : [[["","MassageChairPart"],["","MassageLevel_Cardinal"]]],
+
+        "SetAngle" : [["MassageChairPart","Angle"]],
+        "IncreaseAngle" : [["MassageChairPart",["","Angle"]]],
+        "DecreaseAngle" : [["MassageChairPart",["","Angle"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["MassageChairInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","MassageChairValueInfo"]]]
+        
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["MassageMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"마사지기": {
+    "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartMassage" : [[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]], 
+        "TurnOffSound": [["SoundType"]],
+        "TurnOffLamp" :[["LEDType"]],  
+        "StopMassage"  : [[""]],
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+     "변경/전환": {
+        "SetMode": [["MassagerMode"]]
+    },
+    "설정/조정": {
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "SetMassagePower" : [[["","MassageChairPart"],"MassageLevel_Ordinal"]],
+        "IncreaseMassagePower" : [[["","MassageChairPart"],["","MassageLevel_Cardinal"]]],
+        "DecreaseMassagePower" : [[["","MassageChairPart"],["","MassageLevel_Cardinal"]]]
+    },
+    "정보 요청": {
+        "RequestInformation": [["MassagerInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]],
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","MassagerValueInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["MassageMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+},
+
+"뷰티마스크": {
+   "시작/실행": {
+        "TurnOnPower": [[["", "PowerType"]]],
+        "TurnOnSound": [["SoundType"]],
+        "TurnOnLamp" :[["LEDType"]],
+        "StartBeauty" : [[""]]
+    }, 
+    "정지/중단": {
+        "TurnOffPower": [[["", "PowerType"]]],
+        "TurnOffSound": [["SoundType"]], 
+        "TurnOffLamp" :[["LEDType"]],
+        "StopBeauty" : [[""]],
+        "Pause" : [[""]]
+    }, 
+    "재개/계속": {
+        "Resume" : [[""]]
+    }, 
+    "변경/전환": {
+        "SetMode": [["BeautyMaskMode"]]
+    },
+    "설정/조정": {
+        "SetColor":[["LEDType","Color"]],
+
+        "SetSound" : [["SoundType", ["","SoundLevel_Ordinal"]]],
+        "IncreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        "DecreaseSound" : [["SoundType", ["","SoundLevel_Cardinal"]]],
+        
+        "SetBrightness":[["LEDType",["BrightnessLevel_Ordinal","BrightnessPercent"]]],
+        "IncreaseBrightness":[["LEDType",["","BrightnessLevel","BrightnessPercent"]]],
+        "DecreaseBrightness" : [["LEDType",["","BrightnessLevel","BrightnessPercent"]]]
+    },
+    "정보 요청" : {
+        "RequestInformation": [["BeautyMaskInfo"]],
+        "RequestRemainTime" : [["TimeInfo"]],
+        "QuestionError" : [[""]], 
+        "CheckReservation" : [[["","Reservation"]]],
+        "RequestValue" : [[["SoundType","BeautyMaskValyeInfo"]]]
+    },
+    "예약/알림" : {
+        "StartReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["BeautyMaskMode",""],["","Reservation"]]],
+        "StopReservation" : [[["","TimeHour"],["","TimeMinute"],["","TimeSecond"],"",["","Reservation"]]],
+        "CancelReservation" : [[["","Reservation"]]]
+    }
+}
+
+
+}
